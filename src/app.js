@@ -1,5 +1,9 @@
 const {Button, TextView, contentView} = require('tabris');
 
+ble.scan([], 5, function(device) {
+    console.log(JSON.stringify(device));
+});
+
 new Button({
   centerX: true, top: 100,
   text: 'Show message'

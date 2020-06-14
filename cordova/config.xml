@@ -9,9 +9,4 @@
   </author>
   <preference name="EnableDeveloperConsole" value="$IS_DEBUG" />
   <plugin name="cordova-plugin-ble-central" source="npm" />
-  <platform name="android">
-    <edit-config file="app/src/main/AndroidManifest.xml" target="/manifest/application" mode="merge">
-      <application android:usesCleartextTraffic="true" />
-    </edit-config>
-  </platform>
 </widget>
